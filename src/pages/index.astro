@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import locallyGrown from '../../public/locallyGrown.webp';
+//import locallyGrown from '../../public/locallyGrown.webp';
+import elcomienzo from '../../public/el-comienzo.jpeg';
 import name from '../mateo_ferro.png';
 import { Image, getImage } from 'astro:assets';
-const background = await getImage({src: locallyGrown, format: 'webp'});
+const background = await getImage({src: elcomienzo, format: 'webp'});
 ---
 <BaseLayout>
 	<header class="bg-cover bg-origin-border bg-center h-screen flex items-center justify-center" style={`background-image: url(${background.src});`}>
